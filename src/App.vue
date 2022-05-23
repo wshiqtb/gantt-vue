@@ -1,32 +1,55 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+  <div class="container">
+    <gantt class="left-container" :tasks="tasks"></gantt>
   </div>
 </template>
 
+<script>
+import Gantt from "./components/Gantt.vue";
+
+export default {
+  name: "app",
+  components: { Gantt },
+  data() {
+    return {
+      tasks: {
+        data: [
+          {
+            id: 1,
+            text: "Task #1",
+            start_date: "2020-01-17",
+            duration: 3,
+            progress: 0.6,
+          },
+          {
+            id: 2,
+            text: "Task #2",
+            start_date: "2020-01-20",
+            duration: 3,
+            progress: 0.4,
+          },
+        ],
+        links: [{ id: 1, source: 1, target: 2, type: "0" }],
+      },
+    };
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-#nav {
-  padding: 30px;
+.container {
+  height: 100%;
+  width: 100%;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.left-container {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 </style>
