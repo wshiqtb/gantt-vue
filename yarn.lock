@@ -3237,9 +3237,9 @@ detect-node@^2.0.4:
   integrity sha512-T0NIuQpnTvFDATNuHN5roPwSBG83rFsuO+MXXH9/3N1eFbn4wcPjttvjMLEPWJ0RGUYgQE7cGgS3tNxbqCGM7g==
 
 dhtmlx-gantt@^7.1.9:
-  version "7.1.9"
-  resolved "https://registry.npm.qianxin-inc.cn/dhtmlx-gantt/download/dhtmlx-gantt-7.1.9.tgz#3f3f742f606af7865ec5760af521a58bcf0c3893"
-  integrity sha1-Pz90L2Bq94ZexXYK9SGli88MOJM=
+  version "7.1.11"
+  resolved "https://registry.npmmirror.com/dhtmlx-gantt/-/dhtmlx-gantt-7.1.11.tgz#60a580df3775f2ef101edc666a3ce8d79d448e53"
+  integrity sha512-ivPv/7J/zaL9X8Tbsut0lONvje4IZqGtOdJwrarkIi3EnDmHDoq5gibYRp15zcAgvW7UAd6EnTsuBiTdJpYUQw==
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
